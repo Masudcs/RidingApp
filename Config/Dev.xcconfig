@@ -1,0 +1,17 @@
+#include "Base.xcconfig"
+
+APP_ENVIRONMENT = dev
+PRODUCT_BUNDLE_IDENTIFIER = com.ridehailing.app.dev
+APP_DISPLAY_NAME = RidingApps Dev
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG
+GCC_PREPROCESSOR_DEFINITIONS = DEBUG=1 $(inherited)
+SWIFT_OPTIMIZATION_LEVEL = -Onone
+ONLY_ACTIVE_ARCH = YES
+ENABLE_TESTABILITY = YES
+DEBUG_INFORMATION_FORMAT = dwarf
+
+// Real login (SMS codes) against the dev server in Backend/dev_server.py.
+// Leave empty to keep the in-memory mock auth. In xcconfig files "//" starts a comment, so write
+// the URL as http:/$()/HOST:PORT. Example: AUTH_API_BASE_URL = http:/$()/192.168.0.10:8080
+// Simulator can use localhost; a real iPhone needs your Mac's Wi-Fi IP (same network).
+AUTH_API_BASE_URL =

@@ -1,0 +1,14 @@
+// Settings shared by every environment. Environment-specific xcconfigs #include this file and
+// override only what differs (bundle id suffix, display name, APP_ENVIRONMENT, optimization).
+SDKROOT = iphoneos
+IPHONEOS_DEPLOYMENT_TARGET = 17.0
+TARGETED_DEVICE_FAMILY = 1,2
+SWIFT_VERSION = 5.0
+CODE_SIGN_STYLE = Automatic
+PRODUCT_NAME = RidingApps
+ENABLE_PREVIEWS = YES
+GENERATE_INFOPLIST_FILE = NO
+INFOPLIST_FILE = RidingApps/App/Info.plist
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
+ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor
+SWIFT_EMIT_LOC_STRINGS = YES
